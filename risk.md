@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 #### PhUSE 2016
 ##### Paper DH09
 # Calculating the Risk of Re-Identification of Patient-Level Data Using Quantitative Approach
