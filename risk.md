@@ -92,12 +92,14 @@ Using those values, the probability of acquaintance can be calculated using the 
 Using example prevalence and population values in Table 1, risk of acquaintance can be calculated as per Table 2. 
 
 ###### Table 1. Prevalence of MS and general population
+
 | | MS Cases | Population (age 15-65) | Overall Population |
 |-----------|------|------|------|
 | US        | 400K | 212M | 317M |
 | Worldwide | 2.3M | 4.7B | 7.2B |
 
 ###### Table 2. Calculated risk of acquaintance
+
 | | Population (age 15-65) | Overall Population |
 |-----------|------|------|
 | US        | 0.25 | 0.17 |
@@ -127,6 +129,7 @@ The next step is to calculate the probability of re-identification for each subj
 The following is an example dataset with two quasi-identifiers – sex and age.
 
 ###### Table 3. Example dataset
+
 | USUBJID | SEX | AGE |
 |---------|-----|-----|
 | CT1/101 | M   | 26  |
@@ -143,6 +146,7 @@ The following is an example dataset with two quasi-identifiers – sex and age.
 Let’s first sort all subjects sharing the same quasi-identifiers values into groups called equivalence classes. The probability of re-identification of an individual record is then the reciprocal of its class size:
 
 ###### Table 4. Dataset with equivalence class sizes and record level risk of re-id
+
 | USUBJID | SEX | AGE | Equiv. Class (Size) | Re-Id risk |
 |---|:---:|:---:|:---:|:---:|
 | CT1/101 | M | 26 | A (1) | 1    |
@@ -170,6 +174,7 @@ What pharmaceutical companies do have at hand is the data from other trials they
 As an example, if the aggregate database of subjects in similar studies contained 12 male subjects at the age of 26, then the Re-Id risk for USUBJID=CT1/101 would be 1/12 = 0.083, etc.
 
 ###### Table 5. Applying record level risk of re-id based on similar trials dataset
+
 | SEX | AGE | Equiv. Class Size |    |
 |:---:|:---:|:-----------------:|----|
 | M   | 26  | 12                | -> |
@@ -238,6 +243,7 @@ The first step is to derive the overall risk of re-identification which is the p
 This way average and maximum risk of data set re-identification can be calculated. The same formula will apply to study population and across similar trials. The following set of characteristics will be produced:
 
 ###### Table 6. Calculated metrics for the example dataset
+
 |                  | Pr<sub>max</sub>(re-id) | Pr<sub>avg</sub>(re-id) | % of not k-anonymous records (k=2) |
 |------------------|:--------------:|:--------------:|:----------------------------------:|
 | Study population | 1              | 0.6            | 30%                                |
@@ -255,6 +261,7 @@ For public release, the selected threshold will be applied to the maximum calcul
 Using the values calculated previously in combination with different contexts of data release, below are some examples which illustrate that the same values may be sufficient in some scenarios and unacceptable in others.
 
 ###### Table 7. Risk calculations for different data release contexts
+
 | Context | Estimated risk of attempt in the context | Pr<sub>max</sub>(re-id) / Threshold | Pr<sub>avg</sub>(re-id) / Threshold | % of not k-anonymous records (k=2) / acceptable value | Result |
 |-----------------------------------------------------|:----:|:-----------:|:------------:|:-----------:|:------------------:|
 | Trusted recipient/ Secure portal/ Study population  | 0.1  | 0.1 / NA    | 0.06 / 0.09  | 30% / 1%    | **Not sufficient** |
@@ -277,6 +284,7 @@ When risks are calculated using similar trials, all but the public release scena
 To lower the risk of re-identification when attempted and to address the k-anonymity issue, data would require further manipulation. In the example data set the practical options would be to categorize age values into groups. The below example shows this scenario and updated risk values:
 
 ###### Table 8. Updated dataset with categorized age and recalculated record level risks
+
 | USUBJID | SEX | AGE | AGE<sub>DE-ID</sub> | Equiv. Class (Size) | Re-Id risk |
 |---------|:---:|:---:|:----------:|:-------------------:|:----------:|
 | CT1/101 | M   | 26  | 21-30      | X (5)               | 0.2        |
@@ -291,6 +299,7 @@ To lower the risk of re-identification when attempted and to address the k-anony
 | CT1/110 | F   | 31  | 31-40      | Z (3)               | 0.33       |
 
 ###### Table 9. Re-calculated metrics for the example dataset
+
 |                  | Pr<sub>max</sub>(re-id) | Pr<sub>avg</sub>(re-id) | % of not k-anonymous records (k=2) |
 |------------------|:------------:|:------------:|:----------------------------------:|
 | Study population | 0.5          | 0.3          | 0%                                 |
