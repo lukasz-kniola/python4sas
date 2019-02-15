@@ -3,38 +3,3 @@
 
 @import "jekyll-theme-minimal";
 
-.wrapper {
-    width: 960px;
-    margin: 0 auto;
-}
-
-header {
-    width: 170px;
-    float: left;
-    position: fixed;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
-
-section {
-    width: 700px;
-    float: right;
-    padding-bottom: 50px;
-}
-
-ul.downloads {
-    list-style: none;
-    height: 40px;
-    padding: 0;
-    background: #f4f4f4;
-    border-radius: 5px;
-    border: 1px solid #e0e0e0;
-    width: 170px;
-}
-
-footer {
-    width: 170px;
-    float: left;
-    position: fixed;
-    bottom: 50px;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
