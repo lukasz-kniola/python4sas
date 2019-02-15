@@ -23,14 +23,17 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         
         <p><a href="risk.html">Risk</a>
-
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
+        <p><a href="risk.html">Risk1</a>
+        <p><a href="risk.html">Risk2</a>
+        <p><a href="risk.html">Risk3</a>
+        <p><a href="risk.html">Risk4</a>
+        <p><a href="risk.html">Risk5</a>
+        <p><a href="risk.html">Risk6</a>
+        <p><a href="risk.html">Risk7</a>
+        <p><a href="risk.html">Risk8</a>
+        <p><a href="risk.html">Risk9</a>
+        <p><a href="risk.html">Risk10</a>
+        <p><a href="risk.html">Risk11</a>
         
       </header>
       <section>
@@ -39,8 +42,13 @@
 
       </section>
       <footer>
+
         {% if site.github.is_project_page %}
-        <p>Maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        <p class="view"><a href="{{ site.github.repository_url }}">View on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        {% endif %}
+
+        {% if site.github.is_project_page %}
+        <p>Maintained by <br><a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
