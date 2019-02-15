@@ -2,3 +2,21 @@
 ---
 
 @import "jekyll-theme-minimal";
+
+.wrapper {
+    width: 860px;
+    margin: 0 auto;
+}
+
+header {
+    width: 170px;
+    float: left;
+    position: fixed;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+section {
+    width: 600px;
+    float: right;
+    padding-bottom: 50px;
+}
