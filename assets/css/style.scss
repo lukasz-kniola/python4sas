@@ -70,8 +70,11 @@
 }
 
 @media print, screen and (max-width: 480px) {
-    body .toptop{
+    body {
         padding:15px
+    }
+    .toptop {
+        padding:3px 0px 5px 0px
     }
     .downloads {
         width:99%
