@@ -13,7 +13,8 @@
     width: 100%;
     text-align: left;
     background-color: #000;
-    color: #DDD;
+    font-size: 12px;
+    color: #CCC;
     box-shadow: 1px 0px 2px rgba(0,0,0,0.75);
     z-index: 99;
     -webkit-font-smoothing: antialiased;
@@ -24,10 +25,6 @@
     color: #EEE;
     margin: 0 0 20px;
     font-weight: bold;    
-}
-.toplabel {
-    font-size: 12px;
-    color: #CCC;
 }
 
 @media print, screen and (max-width: 960px) {
