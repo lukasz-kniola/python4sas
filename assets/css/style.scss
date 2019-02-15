@@ -67,6 +67,10 @@
     pre,code {
         word-wrap:normal
     }
+    .toptop {
+        padding:3px 0px 5px 60px
+    }
+    
 }
 
 @media print, screen and (max-width: 480px) {
@@ -74,7 +78,7 @@
         padding:15px
     }
     .toptop {
-        padding:3px 0px 5px 0px
+        padding:3px 0px 5px 25px
     }
     .downloads {
         width:99%
