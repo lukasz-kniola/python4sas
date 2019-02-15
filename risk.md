@@ -92,14 +92,14 @@ Using those values, the probability of acquaintance can be calculated using the 
 Using example prevalence and population values in Table 1, risk of acquaintance can be calculated as per Table 2. 
 
 ###### Table 1. Prevalence of MS and general population
-
+   
 | | MS Cases | Population (age 15-65) | Overall Population |
 |-----------|------|------|------|
 | US        | 400K | 212M | 317M |
 | Worldwide | 2.3M | 4.7B | 7.2B |
 
 ###### Table 2. Calculated risk of acquaintance
-
+| 
 | | Population (age 15-65) | Overall Population |
 |-----------|------|------|
 | US        | 0.25 | 0.17 |
