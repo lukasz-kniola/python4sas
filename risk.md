@@ -99,7 +99,7 @@ Using example prevalence and population values in Table 1, risk of acquaintance 
 | Worldwide | 2.3M | 4.7B | 7.2B |
 
 ###### Table 2. Calculated risk of acquaintance
- 
+| 
 | | Population (age 15-65) | Overall Population |
 |-----------|------|------|
 | US        | 0.25 | 0.17 |
@@ -305,7 +305,7 @@ To lower the risk of re-identification when attempted and to address the k-anony
 | Study population | 0.5          | 0.3          | 0%                                 |
 
 ###### Table 10. Updated risk calculations for different data release contexts
-
+|  
 | Context  | Estimated risk of attempt in the context | Pr<sub>max</sub>(re-id) / Threshold | Pr<sub>avg</sub>(re-id) / Threshold | % of not k-anonymous records (k=2) / acceptable value | Result |
 |-----------------------------------------------------|:----:|:------------:|:------------:|:--------:|:------------------:|
 | Trusted recipient/ Secure portal/ Study population  | 0.1  | 0.050 / NA   | 0.030 / 0.09 | 0% / 1%  | Sufficient         |
