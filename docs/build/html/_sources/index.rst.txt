@@ -7,8 +7,6 @@ Welcome to Python 4 SAS Programmers
 ===================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
 
    intro
    first_steps

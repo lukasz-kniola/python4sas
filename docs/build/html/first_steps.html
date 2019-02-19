@@ -80,9 +80,9 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html#once-you-re-ready">Once you’re ready</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">First Steps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="set_n_merge.html">Setting and Merging Datasets</a></li>
 </ul>
@@ -151,10 +151,17 @@
             
   <div class="section" id="first-steps">
 <h1>First Steps<a class="headerlink" href="#first-steps" title="Permalink to this headline">¶</a></h1>
-<dl class="docutils">
-<dt>Reading in data:</dt>
-<dd>new_dataset = pd.read_csv(“source.csv”)</dd>
-</dl>
+<p>Reading in data:</p>
+<div class="highlight-sas notranslate"><div class="highlight"><pre><span></span><span class="kr">proc sort </span>data=sashelp<span class="m">.</span>class <span class="k">out</span>=class;
+  <span class="k">by</span> name<span class="kr">;</span>
+<span class="kr">run;</span>
+</pre></div>
+</div>
+<p>(everybody knows about the <code class="docutils literal notranslate"><span class="pre">sashelp.class</span></code> dataset)</p>
+<p>or</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">new_dataset</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;source.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>And that’s it.</p>
 </div>
 
