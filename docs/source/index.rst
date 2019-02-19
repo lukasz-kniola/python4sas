@@ -12,6 +12,7 @@ Python for SAS Programmers
    
    intro
    first_steps
+   columns
    set_merge
 
 
